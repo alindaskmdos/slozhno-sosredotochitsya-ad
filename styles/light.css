@@ -1,15 +1,19 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 :root.theme-light {
   --background-color: #FFF1F7;
   --accent-color: #FF8DCB;
-  --accent-color-opacity: #32312D66;
-  --accent-header-color: #FFC2E6;
-
   --text-header-content: #353430;
   --text-link: #353430;
-  --text-secondary: #353430;
+  --accent-color-opacity: #32312D66;
+  --accent-header-color: #FFC2E6;
   --text-secondary-dark: #353430;
-
-  --background-image: url("../images/cover-image-light.png");
+  --text-secondary: #353430;
+  --background-image: url('../images/cover-image-light.png');
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,16 +21,12 @@
     --background-image: url("../images/cover-image-light.png");
     --accent-color: #ff8dcb;
     --accent-color-opacity: #32312d66;
-
     --text-color: #353430;
     --decoration-color: var(--text-color);
-
     --background-color: #fff1f7;
-
     --header1-color: #ffc2e6;
     --header2-color: var(--text-color);
     --header3-color: var(--text-color);
-
     --is-light: hidden;
   }
 }

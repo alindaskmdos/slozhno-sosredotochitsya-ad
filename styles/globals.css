@@ -10,11 +10,6 @@ body {
   margin: 0 auto;
 }
 
-img,
-picture {
-  display: block;
-}
-
 h1,
 h2,
 h3,
@@ -25,24 +20,21 @@ p {
   margin: 0;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+picture {
+  margin: 0;
+  padding: 0;
+}
+
 button,
 a {
-  color: inherit;
-  font: inherit;
-}
-
-button {
-  padding: 0;
-  background: transparent;
-}
-
-a {
-  text-decoration: none;
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
